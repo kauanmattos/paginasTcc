@@ -83,6 +83,7 @@ body{
 
 .btn-criarConta{
     ---cca-primary: rgb(11, 92,0);
+    color: #0B5C00;
     outline: none;
     border: none;
     position: relative;
