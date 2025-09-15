@@ -38,12 +38,22 @@ body{
 }
 
 /* seta no canto superior esquerdo */
+
 .seta-esquerda{
     position: absolute; /* sai do fluxo e pode ser posicionada livremente */
     top: -10px;  /* distância do topo */
     font-size: 50px; /* é usado dessa forma por conta de ser reconhecida como texto */
     color: #FFCC00;
     cursor: pointer;
+}
+
+.seta-esquerda a {
+    text-decoration: none;
+}
+
+.seta-esquerda i {
+    color: #FFCC00;
+    font-size: 50px;
 }
 
 .tres-barrinhas{
@@ -55,10 +65,12 @@ body{
     cursor: pointer;
 }
 
+/*Imagem Jogador*/
+
 .cardJogador{
     display: block; /* transforma a imagem em bloco */
     margin: 0 auto; /* distribui igualmente as margens esquerda e direita */
-    width: 100vh;
+    width: 70%; /* Usa 100% da largura do seu container pai */
     margin-bottom: 10vh;
 }
 
@@ -72,6 +84,48 @@ body{
    padding: 0 25vh;
    margin-bottom: 10vh;
 }
+
+/*Imagem Empresário*/
+
+.cardEmpresario{
+    display: block; /* transforma a imagem em bloco */
+    margin: 0 auto; /* distribui igualmente as margens esquerda e direita */
+    width: 70%; /* Usa 100% da largura do seu container pai */
+    margin-bottom: 10vh;
+}
+
+.cardEmpresario-descricao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: #0B5C00;
+   font-weight: bold;
+   padding: 0 25vh;
+   margin-bottom: 10vh;
+}
+
+/*Imagem Clube*/
+
+.cardClube{
+   display: block; /* transforma a imagem em bloco */
+   margin: 0 auto; /* distribui igualmente as margens esquerda e direita */
+   width: 70%; /* Usa 100% da largura do seu container pai */
+   margin-bottom: 10vh;
+}
+
+.cardClube-descricao{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: #0B5C00;
+   font-weight: bold;
+   padding: 0 25vh;
+   margin-bottom: 10vh;
+}
+
+/*Botão Criar Conta*/
 
 .botao{
     display: flex;
@@ -89,6 +143,8 @@ body{
     color: #FFCC00;
     border: 0;
 }
+
+/*Footer*/
 
 .footer{
     background-color: #419C35; /* verde do rodapé */
