@@ -178,7 +178,7 @@ p{
 
 .infoPessoais label{
     font-weight: 600;
-    color: 0B5C00;
+    color: #0B5C00;
     margin-bottom: 8px;
 }
 
@@ -202,28 +202,66 @@ p{
     box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
 }
 
-.infoEstado{
+/* Linha com Estado e Cidade lado a lado */
+.linha-estado-cidade{
     display: flex;
-    flex-direction: column;
-    width: 8%;
+    gap: 20px; /* espaço entre os campos */
+    width: 100%;
     margin: 20px 0;
-    color: #0B5C00;
-    font-weight: 700;
 }
 
-.infoEstado label{
+.infoEstado, .infoCidade{
+    flex: 1; /* ambos ocupam o espaço proporcional */
+    display: flex;
+    flex-direction: column;
+}
+
+.infoEstado label, .infoCidade label{
     font-weight: 600;
     color: #0B5C00;
     margin-bottom: 8px;
 }
 
-.infoEstado ::placeholder{
-    text-align: center;
+.infoEstado input, .infoCidade input{
+    border: 2px solid rgba(65, 156, 53, 1);
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    outline: none; /* Remove aura */
+    transition: all 0.3s ease;
+}
+
+.infoEstado input::placeholder, .infoCidade input::placeholder{
     color: #0B5C00;
     font-weight: 300;
 }
 
-.infoEstado textarea{
+.infoEstado input:focus, .infoCidade input:focus {
+    border-color: #0B5C00;
+    box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
+}
+
+.infoCPF{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    color: #0B5C00;
+    font-weight: 700;
+}
+
+.infoCPF label{
+    font-weight: 600;
+    color: #0B5C00;
+    margin-bottom: 8px;
+}
+
+.infoCPF ::placeholder{
+    color: #0B5C00;
+    font-weight: 300;
+}
+
+.infoCPF textarea{
     resize: none; /* Impede de redimensionar */
     border: 2px solid rgba(65, 156, 53, 1);
     padding: 12px;
@@ -233,20 +271,58 @@ p{
     transition: all 0.3s ease;
 }
 
-.infoEstado textarea:focus {
+.infoCPF textarea:focus {
     border-color: #0B5C00;
     box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
 }
 
-.linha-estado-cidade{
-    display: flex;
-    gap: 20px; /* espaço entre os campos */
-    width: 80%;
-    margin: 80px auto;
+/*Footer*/
+
+.footer{
+    background-color: #419C35; /* verde do rodapé */
+    color: #FFCC00; /* amarelo dos textos */
+    padding: 20px;
+    margin-top: 30vh;
 }
 
-.infoEstado, .infoCidade{
-    flex: 1; /* ambos ocupam o espaço proporcional */
+.footer-top{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaçamento de linha e coluna*/
+    margin-bottom: 20px;
+}
+
+.footer-top span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-icons i{
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footer-links .column{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
+
+.footer-links a {
+    color: #FFCC00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
