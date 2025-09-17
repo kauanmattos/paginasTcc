@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.faixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCC00;
+    height: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start; /* Deixar os icones nas extremidades */
+    align-items: center;
+    background: linear-gradient(90deg, #0B5C00 13%, #419C35 69%); /* 90deg -> gradiente na horizontal (da esquerda para direita), #0B5C00 13% → começa com verde escuro em 13%, #419C35 69% → vai clareando até o verde claro em 69%. */
+    height: 180px;
+    padding: 0 20px; /* Laterais ajustadas */
+    position: relative; /* Para centralizar a logo depois */
+    margin-bottom: 40px;
+}
+
+.logo{
+    width: 320px;
+    position: absolute; /* logo centralizada */
+    left: 50%; /* distância da esquerda */
+    transform: translateX(-50%); /* serve para corrigir a centralização de um elemento quando usamos left: 50%.*/
+}
+
+/* seta no canto superior esquerdo */
+
+.seta-esquerda{
+    position: absolute; /* sai do fluxo e pode ser posicionada livremente */
+    top: -10px;  /* distância do topo */
+    font-size: 50px; /* é usado dessa forma por conta de ser reconhecida como texto */
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+.seta-esquerda a {
+    text-decoration: none;
+}
+
+.seta-esquerda i {
+    color: #FFCC00;
+    font-size: 50px;
+}
+
+.tres-barrinhas{
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 50px;
+    color: #FFCC00;
+    cursor: pointer;
+}
+
+//* Foto de Perfil*//
+
+.foto-perfil{
+    display: flex ; /* transforma a imagem em bloco */
+    width: 70%; /* Usa 100% da largura do seu container pai */
+    margin-bottom: 10vh;
+    align-self: center;
+    justify-content: center;
+    
+    
+}
