@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -65,14 +68,185 @@ body{
     cursor: pointer;
 }
 
-//* Foto de Perfil*//
+/* Foto de Perfil*/
 
 .foto-perfil{
-    display: flex ; /* transforma a imagem em bloco */
-    width: 70%; /* Usa 100% da largura do seu container pai */
-    margin-bottom: 10vh;
-    align-self: center;
+    display: flex;
     justify-content: center;
-    
-    
+    align-items: center;
+    flex-direction: column;
+    width: 100%;    
+}
+
+h1{
+    font-size: 80%;
+    text-decoration: underline;
+    color: rgba(118, 118, 118, 1);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nomeJogador{
+    color: rgba(11, 92, 0, 1);
+    font-weight: bolder;
+    font-size: 160%;
+}
+
+p{
+    color: rgba(65, 156, 53, 1);
+    font-weight: 700;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.descricao label{
+    font-weight: 600;
+    color: rgba(65, 156, 53, 1);
+    margin-bottom: 8px;
+}
+
+.descricao textarea{
+    resize: none; /* Impede de redimensionar */
+    border: 2px solid rgba(65, 156, 53, 1);
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    outline: none; /* Remove aura */
+    transition: all 0.3s ease;
+}
+
+.descricao textarea:focus {
+    border-color: #0B5C00;
+    box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+/* Esconde input padrão*/
+.input-file{
+    display: none;
+}
+
+/* Botão estilizado*/
+.btn-upload{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre + e o texto */
+    background: #e5e5e5;
+    color: #333;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #d4d4d4;
+}
+
+/* O simbolo + */
+.btn-upload .plus{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: #333;
+}
+
+.infoPessoais{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    color: #0B5C00;
+    font-weight: 700;
+}
+
+.infoPessoais label{
+    font-weight: 600;
+    color: 0B5C00;
+    margin-bottom: 8px;
+}
+
+.infoPessoais ::placeholder{
+    color: #0B5C00;
+    font-weight: 300;
+}
+
+.infoPessoais textarea{
+    resize: none; /* Impede de redimensionar */
+    border: 2px solid rgba(65, 156, 53, 1);
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    outline: none; /* Remove aura */
+    transition: all 0.3s ease;
+}
+
+.infoPessoais textarea:focus {
+    border-color: #0B5C00;
+    box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
+}
+
+.infoEstado{
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    margin: 20px 0;
+    color: #0B5C00;
+    font-weight: 700;
+}
+
+.infoEstado label{
+    font-weight: 600;
+    color: #0B5C00;
+    margin-bottom: 8px;
+}
+
+.infoEstado ::placeholder{
+    text-align: center;
+    color: #0B5C00;
+    font-weight: 300;
+}
+
+.infoEstado textarea{
+    resize: none; /* Impede de redimensionar */
+    border: 2px solid rgba(65, 156, 53, 1);
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    outline: none; /* Remove aura */
+    transition: all 0.3s ease;
+}
+
+.infoEstado textarea:focus {
+    border-color: #0B5C00;
+    box-shadow: 0 0 5px rgba(11, 92, 0, 0.5);
+}
+
+.linha-estado-cidade{
+    display: flex;
+    gap: 20px; /* espaço entre os campos */
+    width: 80%;
+    margin: 80px auto;
+}
+
+.infoEstado, .infoCidade{
+    flex: 1; /* ambos ocupam o espaço proporcional */
+    display: flex;
+    flex-direction: column;
 }

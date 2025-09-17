@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logado.css">
-    <title>Conta Logada - Jogador</title>
-</head>
-<body>
-    <div class="faixa"></div>
-    <div class="header">
-      <div class="seta-esquerda">
-        <i class="fa-solid fa-arrow-left"></i>
-      </div>
-      <div class="tres-barrinhas">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <img src="img/logo.png" alt="" class="logo" href="clube.html" />
-    </div>
 
-    <div class="foto-perfil">
-        <img src="img/fotoPerfil.png" alt="" class="fotoPerfil">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="logado.css">
+  <title>Conta Logada - Jogador</title>
+</head>
+
+<body>
+  <div class="faixa"></div>
+  <div class="header">
+    <div class="seta-esquerda">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div class="tres-barrinhas">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <img src="img/logo.png" alt="" class="logo" href="clube.html" />
+  </div>
+
+  <div class="foto-perfil">
+    <img src="img/fotoPerfil.png" alt="">
+    <h1>Ver foto de perfil</h1>
+    <div class="nomeJogador">Kauan Mattos</div>
+    <p>Atacante</p>
+
+    <!--Campo de Descrição-->
+    <div class="descricao">
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" placeholder="Escreva sobre você...." rows="5"></textarea>
+
+      <!--Campo de Portfólio-->
+      <div class="portfolio">
+        <label for="portfolio">Adicione seu Portifólio:</label>
+
+        <!--input real escondido-->
+        <input type="file" id="portfolio" class="input-file">
+
+        <!--botão customizado-->
+        <label for="portfolio" class="btn-upload">
+          <span class="plus">+</span> Adicionar Arquivo
+        </label>
+      </div>
+    </div>
+  </div>
+    <h2 class="infoPessoais">
+      Informações Pessoais
+    </h2>
+
+    <div class="infoPessoais">
+      <label for="infoPessoais">Data de Nascimento: *</label>
+      <textarea id="infoPessoais" placeholder="DD/MM/AAAA" rows="1"></textarea>
+
+      <div class="infoEstado">
+      <label for="infoEstado">Estado: *</label>
+      <textarea id="infoEstado" placeholder="SP" rows="1"></textarea>
     </div>
 </body>
+
 </html>
